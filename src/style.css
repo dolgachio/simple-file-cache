@@ -1,0 +1,12 @@
+html {
+  /* serif sucks! */
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+#the-canvas {
+  border:1px solid black;
+}

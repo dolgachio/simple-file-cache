@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Super Simple ServiceWorker</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Super simple ServiceWorker and File Cache example</h1>
+
+<h2>PDF file viewed by PDFJS library</h2>
+<h3 class="load-error" style="color: red; display: none;">Cannot load file</h3>
+<canvas id="the-canvas"></canvas>
+
+<div>
+    <button class="save-binary">Save PDF binary to cache</button>
+</div>
+<div>
+    <button class="delete-binary">Delete PDF binary from cache</button>
+</div>
+<div>
+    <a href="/reset">Reset service worker</a>
+</div>
+
+<script>
+    // Let's register our serviceworker
+    navigator.serviceWorker.register('sw.js', {
+        // The scope cannot be parent to the script url
+        scope: './'
+    });
+</script>
+<script src="logging.js"></script>
+<script src="pdf.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
