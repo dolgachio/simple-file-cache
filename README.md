@@ -14,4 +14,5 @@ If everything fine, you will see:
 serving "src" at http://127.0.0.1:8080
 ```
 
-It could be different URL from `http://127.0.0.1:8080`, so copy it and open in browser
+URL could be different from `http://127.0.0.1:8080`
+To see the example, please copy the URL and open it in the browser.
