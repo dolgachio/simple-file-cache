@@ -10,3 +10,19 @@ img {
 #the-canvas {
   border:1px solid black;
 }
+
+.simple-button {
+  padding: 10px;
+  border-radius: 5px;
+
+  font-size: 16px;
+  color: #fff;
+}
+
+.simple-button_save {
+  background-color: #74D5DD;
+}
+
+.simple-button_delete {
+  background-color: #ff4040;
+}
