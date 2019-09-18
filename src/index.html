@@ -10,13 +10,23 @@
 <section>
     <h1>Super simple ServiceWorker and File Cache example</h1>
 
-    <h2>PDF file viewed by PDFJS library:</h2>
+    <p>
+        By default all static files on the page are cached by service worker.
+        However, the PDF file source is not.
+        So, in offline by default you see page without PDF file preview.
+    </p>
+
+    <p>
+        To cache PDF file you need to click on "Save PDF file to cache" button
+    </p>
+
+    <h2>PDF file rendered by PDFJS library:</h2>
     <h3 class="load-error" style="color: red; display: none;">Cannot load file</h3>
     <canvas id="the-canvas"></canvas>
 
     <div>
-        <button class="simple-button simple-button_save save-binary">Save PDF binary to cache</button>
-        <button class="simple-button simple-button_delete delete-binary">Delete PDF binary from cache</button>
+        <button class="simple-button simple-button_save save-binary">Save PDF file to cache</button>
+        <button class="simple-button simple-button_delete delete-binary">Delete PDF file from cache</button>
     </div>
 
     <div>
