@@ -10,7 +10,7 @@ let url = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/examples/le
 let pdfjsLib = window['pdfjs-dist/build/pdf'];
 
 // The workerSrc property shall be specified.
-pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf.worker.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdfjs/pdf.worker.js';
 
 // Asynchronous download of PDF
 let loadingTask = pdfjsLib.getDocument(url);

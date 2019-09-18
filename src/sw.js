@@ -16,8 +16,8 @@ self.addEventListener('install', function(event) {
         './',
         'style.css',
         'logging.js',
-        'pdf.js',
-        'pdf.worker.js'
+        'pdfjs/pdf.js',
+        'pdfjs/pdf.worker.js'
       ]);
     })
   );
